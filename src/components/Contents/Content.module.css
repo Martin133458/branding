@@ -1,0 +1,13 @@
+.partners {
+  background-color: black;
+  padding: 44px 0 44px 0;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 860px) {
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=Content.module.css.map */
