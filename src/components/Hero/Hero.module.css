@@ -63,4 +63,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+@media (max-width: 640px) {
+  .imghero {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Hero.module.css.map */
