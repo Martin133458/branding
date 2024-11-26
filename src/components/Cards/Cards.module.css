@@ -1,0 +1,43 @@
+.cards1 {
+  background-color: gray;
+  width: 100%;
+  border-radius: 20px;
+}
+.cards1 h1 {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1, 1fr));
+  gap: 100px;
+  grid-template-areas: "card1 card2" "card3 card4" ". . .";
+}
+
+.card1 {
+  background-image: url(public/image11.png);
+  width: 407px;
+  height: 289px;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  background-image: url(public/image13.png);
+  width: 685px;
+  height: 289px;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background-image: url(public/image12.png);
+  width: 685px;
+  height: 289px;
+  background-repeat: no-repeat;
+}
+
+.card4 {
+  background-image: url(public/image14.png);
+  width: 407px;
+  height: 289px;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=Cards.module.css.map */

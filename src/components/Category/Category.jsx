@@ -13,7 +13,7 @@ const Category = () => {
          <Section orient="center">NEW ARRIVALS</Section>
        
          <div className={s.wrapper}>
-            {Products.map(card => (
+            {Products.slice(0, 4).map(card => (
 
             <Card key={card.id} image={card.image} name={card.name} price={card.price}/>
             ))}
