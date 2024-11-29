@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import { Route, Routes } from 'react-router-dom'
 import Shop from './pages/Shop/Shop'
 import Header from './components/Header/Header'
+import Product from './pages/Product'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
 
       <Route path='/' element={<Home/>}/>
       <Route path='/shop' element={<Shop/>}/>
+      <Route path='/product/:id' element={<Product/>}/>
     </Routes>
     </>
   )

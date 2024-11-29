@@ -48,6 +48,7 @@ const Shopwrap = () => {
                <button className={s.b}>Write a Review</button>
             </div>
          </div>
+            <h1 className={s.h}>You might also like</h1>
          <div className={s.comments}>
             <div className={s.comment1}>
                <img src="/Frame 10.png" alt="" />
