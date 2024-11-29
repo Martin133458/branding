@@ -1,0 +1,11 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 390px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+}/*# sourceMappingURL=Category.module.css.map */
