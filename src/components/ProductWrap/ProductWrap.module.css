@@ -1,0 +1,263 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 385px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+}
+@media (max-width: 385px) {
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 385px) {
+  .images {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.images div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.box > div {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.box > div:nth-child(1) h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 400px;
+}
+.box > div:nth-child(1) h3 {
+  font-size: 28px;
+}
+.box > div:nth-child(1) .price {
+  display: flex;
+  gap: 12px;
+  font-size: 30px;
+}
+.box > div:nth-child(1) .p {
+  font-size: 16px;
+  opacity: 0.6;
+  line-height: 1.4;
+}
+.box > div:nth-child(2) .colors {
+  display: flex;
+  gap: 16px;
+}
+.box > div:nth-child(2) .colors div {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.box > div:nth-child(2) .colors div:nth-child(1) {
+  background-color: #464632;
+}
+.box > div:nth-child(2) .colors div:nth-child(2) {
+  background-color: #314F4A;
+}
+.box > div:nth-child(2) .colors div:nth-child(3) {
+  background-color: #31344F;
+}
+.box > div:nth-child(3) button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.box > div:nth-child(3) button:focus {
+  background-color: black;
+  color: white;
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.comments .comment1 {
+  border: 2px solid #f0f0f0;
+  padding: 10px;
+  border-radius: 20px;
+}
+@media (max-width: 580px) {
+  .comments .comment1 p {
+    width: 310px;
+  }
+}
+.comments p {
+  width: 522px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 519px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.h {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Candal", sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 62px;
+}
+
+button {
+  background-color: #f0f0f0;
+  border: none;
+  display: flex;
+  padding: 13px 20px;
+  border-radius: 62px;
+  cursor: pointer;
+}
+
+.b {
+  background-color: black;
+  color: white;
+}
+
+.sud1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  padding: 30px;
+}
+@media (max-width: 565px) {
+  .sud1 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.sud1 h1 {
+  font-size: 40px;
+  width: 551px;
+  color: white;
+}
+@media (max-width: 565px) {
+  .sud1 h1 {
+    width: 297px;
+    font-size: 32px;
+  }
+}
+.sud1 input {
+  padding: 12px 75px 12px 75px;
+  border-radius: 20px;
+  border: none;
+}
+.sud1 button {
+  margin-top: 5px;
+  padding: 12px 88px 12px 88px;
+}
+
+.footer {
+  background-color: #f0f0f0;
+}
+
+.con {
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media (max-width: 700px) {
+  .con {
+    flex-direction: column;
+  }
+}
+
+.content1 p {
+  width: 248px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.content1 img {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.end {
+  display: flex;
+  gap: 110px;
+}
+@media (max-width: 1020px) {
+  .end {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.end p {
+  color: rgba(0, 0, 0, 0.6);
+}
+.end .end1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card p {
+  color: rgba(0, 0, 0, 0.6);
+}/*# sourceMappingURL=ProductWrap.module.css.map */

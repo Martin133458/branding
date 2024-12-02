@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import Product from './pages/Product'
 
 
+
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
       <Route path='/' element={<Home/>}/>
       <Route path='/shop' element={<Shop/>}/>
       <Route path='/product/:id' element={<Product/>}/>
+ 
     </Routes>
     </>
   )
