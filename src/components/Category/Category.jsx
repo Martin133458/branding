@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import s from "./Category.module.scss"
 import Section from '../SectionTitle/Section'
 import Card from '../Card/Card'
 
 import Products from "/public/products.json"
 import { Link } from 'react-router-dom'
+import { useAppContext } from '../../context'
 
 const Category = () => {
+
+   const { visibleProducts,  loadMoreProducts } = useAppContext()
+
+  
   return (
    <>
     <section className={s.category}>
@@ -14,7 +19,7 @@ const Category = () => {
          <Section orient="center">NEW ARRIVALS</Section>
        
          <div className={s.wrapper}>
-            {Products.slice(0, 4).map(card => (
+            {Products.slice(0, visibleProducts).map(card => (
               <Link to={`/product/${card.id}`}>
             <Card key={card.id} image={card.image} name={card.name} price={card.price}/>
               </Link>
@@ -23,6 +28,14 @@ const Category = () => {
            
            
          </div>
+
+         {visibleProducts  < Products.length && (
+            <div className={s.loadMore}>
+            <button onClick={loadMoreProducts} className={s.loadMoreProducts}>
+            Еще
+            </button>
+            </div>
+         )}
     <div className={s.sud1}>
            
                <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>

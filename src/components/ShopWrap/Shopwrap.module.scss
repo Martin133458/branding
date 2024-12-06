@@ -45,36 +45,3 @@ background-size: cover;
    margin-top: 30px;
 }
 
-.card1 {
-   display: flex;
-   
-}
-.wrap2 {
-   display: flex;
-   justify-content: space-between;
-   gap: 600px;
-   align-items: end;
-   
-   p {
-      background-color: #f0f0f0;
-      padding: 10px 20px;
-      border-radius: 20px;
-      cursor: pointer;
-   }
-}
-.con {
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-
-   
-}
-hr {
-   margin: 10px;
-}
-section {
-   .n {
-     text-transform: uppercase;
-      margin: 10px;
-   }
-}

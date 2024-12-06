@@ -13,7 +13,6 @@ const Cards = () => {
   <div className={s.card2}>Formal</div>
   <div className={s.card3}>Party</div>
   <div className={s.card4}>Gym</div>
-  
 </div>
       </div>
     </section>

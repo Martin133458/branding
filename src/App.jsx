@@ -13,11 +13,9 @@ const App = () => {
     <>
     <Header/>
     <Routes>
-
       <Route path='/' element={<Home/>}/>
       <Route path='/shop' element={<Shop/>}/>
       <Route path='/product/:id' element={<Product/>}/>
- 
     </Routes>
     </>
   )
